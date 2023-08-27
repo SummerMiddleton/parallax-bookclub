@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: sans-serif;
+        margin: 0px;
+      }
+      h1 {
+        font-size: 125px;
+        color: #fff8ea;
+        text-align: left;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        padding: none;
+        color: #fff8ea;
+        justify-content: space-around;
+      }
+      p {
+        color: #fff8ea;
+        margin: 0px;
+        padding: 300px;
+        font-size: 15px;
+      }
+      h2 {
+        color: #fff8ea;
+        margin: 0px;
+        padding: 100px;
+        font-size: 15px;
+        font-weight: lighter;
+      }
+      button {
+        border-radius: 25px;
+        margin: 0 auto;
+        display: block;
+        background-color: #fff8ea;
+        border: 1px solid #884a39;
+        color: #884a39;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        color: #fff8ea;
+        background: #884a39;
+        cursor: pointer;
+        box-shadow: 0 1px 20px #c38154;
+      }
+      footer {
+        color: #fff8ea;
+        font-size: 10px;
+      }
+      .previous_books {
+        padding-top: 45px;
+      }
+      .recommend {
+        padding-top: 45px;
+      }
+      .contact {
+        padding-top: 45px;
+      }
+      .previous_books:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .recommend:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .contact:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .journey {
+        font-weight: bolder;
+        font-style: italic;
+        font-size: 20px;
+      }
+      .parallax {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-attachment: fixed;
+
+        background-image: url(https://s26162.pcdn.co/wp-content/uploads/sites/2/2023/01/Books.jpg);
+        background-position: center;
+        background-size: cover;
+        row-gap: 4rem;
+
+        text-align: center;
+      }
+      .quote {
+        background-image: linear-gradient(to top, #884a39 0%, #c38154 100%);
+      }
+      .no_parallax {
+        background-color: #c38154;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parallax">
+      <h1>
+        <em>Unlock the World of Imagination </em>
+      </h1>
+    </div>
+    <section class="quote">
+      <ul>
+        <li class="previous_books">Previous Books</li>
+        <li class="recommend">Recommend Next Book</li>
+        <li class="contact">Contact Us</li>
+      </ul>
+      <p>
+        Imagine reading as opening doors to new places, thoughts, and growth.
+        It's like walking into books that show you different views, cultures,
+        and ideas. Think of it as exercising your mind, where thoughts and
+        creativity play. Let's talk book clubs – they're cozy cafes where you
+        chat about books you love or didn't love. You meet fellow book fans and
+        make friends who love words like you. It's not just stories; it's
+        finding friends who feel what you feel. Together, it's a reading
+        adventure. The magic? Book talks become real talks, sparking new
+        thoughts. So, why not join reading and book clubs? Pages show new
+        things, chats open new ideas. No waiting –
+        <br />
+        <span class="journey">let's start the journey!</span>
+        <br />
+        <br />
+        <a
+          href="https://www.healthline.com/health/benefits-of-reading-books#increases-empathy"
+          target="_blank"
+        >
+          More reading benefits
+        </a>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <button>
+          <strong>JOIN A BOOK CLUB NOW </strong>
+        </button>
+      </p>
+    </section>
+    <section class="no_parallax">
+      <h2>
+        "A reader lives a thousand lives before he dies. The man who never reads
+        lives only one." – George R.R. Martin
+      </h2>
+      <br />
+      <br />
+      <footer>
+        <hr />
+        <br />
+        This page was built by Summer Middleton
+        <br />
+        <br />
+      </footer>
+    </section>
+    <script>
+      function join() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+
+        alert(
+          "Thank you " +
+            name +
+            "! We'll be contacting you shortly! In the meantime, happy reading!📖 "
+        );
+      }
+      let joinButton = document.querySelector("button");
+      joinButton.addEventListener("click", join);
+    </script>
+  </body>
+</html>
